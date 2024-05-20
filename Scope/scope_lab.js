@@ -28,6 +28,20 @@ function show(){
 
 show();
     
-console.log(functionVar); // Throws ReferenceError
-console.log(functionLet); // Throws ReferenceError
-console.log(functionConst); // Throws ReferenceError
+// console.log(functionVar); // Throws ReferenceError
+// console.log(functionLet); // Throws ReferenceError
+// console.log(functionConst); // Throws ReferenceError
+
+{
+    let exerciseLet = "exercise let variable";
+    const exerciseConst = "exercise const variable";
+    var exerciseVar = "exercise var variable"
+
+    exerciseLet = "change let variable";
+    // exerciseConst = "change const variable";
+    exerciseVar = "change var variable";
+}
+
+exerciseLet = "outside value";
+exerciseVar = "outside value";
+exerciseConst = "outside value";
